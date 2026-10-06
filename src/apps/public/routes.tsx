@@ -1,9 +1,9 @@
 import type { RouteObject } from 'react-router-dom'
-import { Home } from './pages/Home'
+import { PublicLanding } from './pages'
 
 export const publicRoutes: RouteObject[] = [
   {
     index: true,
-    element: <Home />,
+    element: <PublicLanding />,
   },
 ]

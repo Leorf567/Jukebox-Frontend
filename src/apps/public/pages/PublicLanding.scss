@@ -1,0 +1,344 @@
+/* src/apps/public/pages/PublicLanding.scss */
+.landing-container {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Constraint Container applied to all sections */
+.inner-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+/* Header */
+.header {
+  background-color: #311815;
+  color: white;
+  padding: 1.5rem 0;
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo-placeholder {
+    background-color: white;
+    color: black;
+    padding: 0.75rem 3rem;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+  }
+
+  .sign-up-btn {
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    padding: 0.5rem 2.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 8rem 0;
+  position: relative;
+  background-color: #ffffff;
+
+  .hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-content {
+    max-width: 550px;
+    z-index: 2;
+
+    h1 {
+      font-size: 4.5rem;
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+      line-height: 1.05;
+      color: #111;
+      letter-spacing: -1px;
+    }
+
+    .highlight {
+      color: #cc6c54;
+    }
+
+    p {
+      color: #6b7280;
+      margin-bottom: 3rem;
+      line-height: 1.7;
+      font-size: 1.05rem;
+    }
+  }
+
+  .get-started-btn {
+    border: 2px solid #552723;
+    color: #552723;
+    background: transparent;
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+
+    .arrow-circle {
+      background-color: #552723;
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .hero-graphic {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    background-color: #8b6868;
+    border-bottom-left-radius: 300px;
+    z-index: 1;
+    opacity: 0.8;
+  }
+}
+
+/* About Section */
+.about-section {
+  text-align: center;
+  padding: 6rem 0;
+  background-color: #fcfcfc;
+  border-top: 1px solid #f3f4f6;
+  border-bottom: 1px solid #f3f4f6;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    color: #111;
+  }
+
+  p {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #4b5563;
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+}
+
+/* Features Section */
+.features-section {
+  padding: 7rem 0;
+  background-color: #ffffff;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 4rem;
+    color: #111;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+
+  .feature-card {
+    background-color: #d8edf0;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 320px;
+
+    .icon-placeholder {
+      width: 3.5rem;
+      height: 3.5rem;
+      background-color: white;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    p {
+      color: #4b5563;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .inline-cta {
+      margin-top: auto;
+      font-weight: 700;
+      color: #111;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+/* Repositories Section */
+.repos-section {
+  padding: 7rem 0;
+  background-color: #552723;
+  color: white;
+
+  .repos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .sign-up-btn {
+      border: 1px solid white;
+      background: transparent;
+      color: white;
+      padding: 0.6rem 2.5rem;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+  }
+
+  .repos-list {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .repo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2.5rem 0;
+
+    &.expanded {
+      padding: 3rem 0;
+    }
+
+    .repo-info-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-right: 4rem;
+    }
+
+    .repo-info {
+      display: flex;
+      gap: 3rem;
+
+      .number {
+        font-size: 1.75rem;
+        font-weight: 300;
+        opacity: 0.9;
+      }
+
+      h3 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin: 0 0 1rem 0;
+      }
+
+      p {
+        color: #d1d5db;
+        margin: 0;
+        max-width: 600px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+    }
+
+    .repo-image-placeholder {
+      width: 180px;
+      height: 180px;
+      background-color: #d1d5db;
+    }
+
+    .toggle-btn {
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 2rem;
+      font-weight: 300;
+      cursor: pointer;
+      margin-top: -0.5rem;
+    }
+  }
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 8rem 0;
+  background-color: #ffffff;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2.5rem;
+    line-height: 1.3;
+    color: #111;
+  }
+
+  .cta-primary-btn {
+    border: 1px solid #111;
+    background: transparent;
+    color: #111;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #552723;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  font-size: 0.9rem;
+}
